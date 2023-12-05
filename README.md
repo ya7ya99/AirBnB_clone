@@ -50,7 +50,8 @@ Documented commands (type help <topic>):
 ========================================
 EOF  help  quit
 (hbnb)
-$```
+$
+'''
 These examples showcase the basic usage of the command interpreter in both interactive and non-interactive modes. Explore the available commands and enjoy building your AirBnB clone!
 
 Contributors
