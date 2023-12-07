@@ -1,71 +1,60 @@
-
-```markdown
-# The AirBnB Clone Project
-![68747470733a2f2f7777772e706e676974656d2e636f6d2f70696d67732f6d2f3133322d313332323132355f7472616e73706172656e742d6261636b67726f756e642d616972626e622d6c6f676f2d68642d706e672d646f776e6c6f61642e706e67](https://github.com/ya7ya99/AirBnB_clone/assets/135076559/40f88f4d-427e-47d8-98e5-33057c9d50fe)
-
+# AirBnB Clone Project
 
 ## Project Description
 
-This is the first part of the AirBnB clone project where we worked on the backend of the project while interfacing it with a console application with the help of the `cmd` module in Python.
+Welcome to the AirBnB clone project! This project focuses on building a Python-based command-line interpreter for managing AirBnB objects. The overarching goal is to lay the foundation for a full web application by implementing key concepts such as serialization, deserialization, and file storage.
 
-...
+## Command Interpreter Overview
 
-## How to start it
+The command interpreter, named `console.py`, allows users to interact with AirBnB objects through various commands. These commands enable the creation, retrieval, modification, and deletion of objects. The interpreter serves as a crucial component for the development of subsequent project phases, including HTML/CSS templating, database storage, API integration, and front-end implementation.
 
-These instructions will get you a copy of the project up and running on your local machine (Linux distro) for development and testing purposes.
+### How to Start the Command Interpreter
 
-### Installing
+To start the command interpreter, follow these steps:
 
-You will need to clone the repository of the project from Github. This will contain the simple shell program and all of its dependencies.
+1. Clone the project repository: `git clone <repository-url>`
+2. Navigate to the project directory: `cd AirBnB_clone`
+3. Run the console: `./console.py`
+
+### How to Use the Command Interpreter
+
+Once the console is running, you can use the following commands:
+
+- `help`: Display a list of documented commands.
+- `EOF`: End the console session.
+- `quit`: Quit the console.
+
+You can perform various operations on AirBnB objects, including creating new objects, retrieving objects, updating attributes, and deleting objects.
+
+## Examples
+
+**Interactive Mode:**
 
 ```bash
-git clone https://github.com/jzamora5/AirBnB_clone.git
-```
+$ ./console.py
+(hbnb) help
 
-After cloning the repository you will have a folder called AirBnB_clone. In here there will be several files that allow the program to work.
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
 
-- **console.py**: The main executable of the project, the command interpreter.
-- **models/engine/file_storage.py**: Class that serializes instances to a JSON file and deserializes JSON file to instances.
-- **models/__init__.py**: A unique FileStorage instance for the application.
-- **models/base_model.py**: Class that defines all common attributes/methods for other classes.
-- **models/user.py**: User class that inherits from BaseModel.
-- **models/state.py**: State class that inherits from BaseModel.
-- **models/city.py**: City class that inherits from BaseModel.
-- **models/amenity.py**: Amenity class that inherits from BaseModel.
-- **models/place.py**: Place class that inherits from BaseModel.
-- **models/review.py**: Review class that inherits from BaseModel.
+(hbnb)
+(hbnb)
+(hbnb) quit
+$
+Non-Interactive Mode:
+$ echo "help" | ./console.py
+(hbnb)
 
-...
-
-## How to use it
-
-It can work in two different modes:
-
-- Interactive and Non-interactive.
-
-In Interactive mode, the console will display a prompt (hbnb) indicating that the user can write and execute a command. After the command is run, the prompt will appear again and wait for a new command...
-
-...
-
-## Available commands and what they do
-
-The recognizable commands by the interpreter are the following:
-
-| Command | Description |
-| ------- | ----------- |
-| `quit` or `EOF` | Exits the program. |
-| `help` | Provides a text describing how to use a command. |
-| `create` | Creates a new instance of a valid Class, saves it (to the JSON file), and prints the id. Valid classes are: BaseModel, User, State, City, Amenity, Place, Review. |
-| `show` | Prints the string representation of an instance based on the class name and id. |
-| `destroy` | Deletes an instance based on the class name and id (saves the change into a JSON file). |
-| `all` | Prints all string representation of all instances based or not on the class name. |
-| `update` | Updates an instance based on the class name and id by adding or updating attribute (saves the changes into a JSON file). |
-| `count` | Retrieve the number of instances of a class. |
-
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb)
+$
+These examples showcase the basic usage of the command interpreter in both interactive and non-interactive modes. Explore the available commands and enjoy building your AirBnB clone!
 
 Contributors
 Oumaima Sellouane
 Yahya Khaldy
-## License
-
-This project is licensed under the [MIT License](LICENSE).
+License
+This project is licensed under the MIT License.
