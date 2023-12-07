@@ -1,4 +1,3 @@
-بالطبع، يمكنك إضافة هذا النص كسكريبت لملف README.md الخاص بمشروع AirBnB Clone على GitHub. النص التالي يشمل النص الذي قدمته مع تنسيق Markdown:
 
 ```markdown
 # The AirBnB Clone Project
