@@ -1,8 +1,8 @@
 
 ```markdown
 # The AirBnB Clone Project
+![68747470733a2f2f7777772e706e676974656d2e636f6d2f70696d67732f6d2f3133322d313332323132355f7472616e73706172656e742d6261636b67726f756e642d616972626e622d6c6f676f2d68642d706e672d646f776e6c6f61642e706e67](https://github.com/ya7ya99/AirBnB_clone/assets/135076559/40f88f4d-427e-47d8-98e5-33057c9d50fe)
 
-![AirBnB Logo](path/to/your/image.png) <!-- Replace with the actual path to your AirBnB logo image -->
 
 ## Project Description
 
