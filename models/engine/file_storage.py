@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Import json and os modules."""
-
 import json
 import os
 from models.base_model import BaseModel
@@ -12,8 +11,6 @@ from models.place import Place
 from models.review import Review
 
 """FileStorage class."""
-
-
 class FileStorage:
     """FileStorage class."""
 
@@ -41,7 +38,8 @@ class FileStorage:
         if os.path.exists(file_path) and os.path.isfile(file_path):
             with open(file_path, 'r') as file:
                 loaded_objects = json.load(file)
-            for key, value in loaded_objects.items():
+            while loaded_objects:
+                key, value = loaded_objects.popitem()
                 class_name = value.get('__class__')
                 if class_name:
                     class_obj = globals()[class_name]
