@@ -32,4 +32,8 @@ class User(BaseModel):
                 if key == "created_at" or key == "updated_at":
                     value = datetime.fromisoformat(value)
                 setattr(self, key, value)
+                
+    def count(self):
+        """Return the number of User instances."""
+        return super().count()
 
