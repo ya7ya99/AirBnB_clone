@@ -201,16 +201,14 @@ class HBNBCommand(cmd.Cmd):
             if not model_class or not issubclass(model_class, BaseModel):
                 print(f"** Class '{ClassName}' doesn't exist or isn't a model. **")
                 return
-            objects = FileStorage._FileStorage__objects
-            c = 0
-            for key, value in objects.items():
-                Class_Name = key.split(".")[0]
-                if key.startswith(f"{Class_Name}."):
-                    c += 1
-            print(c)
-        else:
-            print("** Please provide a class name. **")
-
+        objects = FileStorage._FileStorage__objects
+        c = 0
+        for key, value in objects.items():
+            Class_Name = key.split(".")[0]
+            if key.startswith(f"{Class_Name}."):
+                c += 1
+        print(c)
+        
     def default(self, line):
         """ Method invoked for unrecognized command prefixes """
         if not line:
