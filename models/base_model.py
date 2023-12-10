@@ -50,4 +50,10 @@ class BaseModel:
                 value = value.isoformat()
             result_dict[key] = value
         return result_dict
+        
+    def count(self):
+        """Return the number of instances for the class."""
+        objects = FileStorage._FileStorage__objects
+        class_name = self.__name__
+        return sum(1 for key in objects if key.startswith(f"{class_name}."))
 
